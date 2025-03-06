@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    />
+</head>
+<body>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim"></div>
+    </div>
+    <div class="container">
+        <nav>
+            <h1><span>CYBER</span>GUARD</h1>
+            <ul>
+                <li>Home</li>
+                <li>Core Features</li>
+                <li>Advanced Tools</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+        <section>
+            <div class="textBox">
+                <h1><span>Protect what matters.</span></h1>
+                <h1 style="font-size: 2.59em;">Stay safe, stay resilient.</h1>
+                <button class="homeBtn" style="--i:#00bfff;">Learn More About Us!</button>
+            </div>
+        </section>
+    </div>
+    <section class="popular" id="Services">
+      <div class="section__container popular__container">
+        <h2 class="section__header">Security Features</h2>
+        <div class="popular__grid">
+          <div class="popular__card">
+            <div>
+              <a href="heart.html">
+              <h4>Authentication Checker</h4>
+              </a>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <a href="gps.html">
+              <h4>Core Security Features</h4>
+              </a>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <a href="stepcount.html">
+              <h4>Advance Security Tools</h4>
+              </a>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <a href="gps.html">
+              <h4>Generate Report</h4>
+              </a>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <a href="gps.html">
+              <h4>Take Security Actions</h4>
+              </a>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <a href="gps.html">
+              <h4>Cyber</h4>
+              </a>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    
+
+  <div class="auth-section">
+    <h2 class="section__header">Authentication Checker</h2>
+    <div class="auth-card-wrapper">
+        <div class="auth-card main-card" 
+            onclick="toggleAuthCards(this, ['Biometric Login', 'Password Login'])">
+            Authentication Feature
+        </div>
+    </div>
+</div>
+
+<div class="auth-section">
+    <h2 class="section__header">Core Security Features</h2>
+    <div class="auth-card-wrapper">
+        <div class="auth-card main-card" 
+            onclick="toggleAuthCards(this, ['Threat Intelligence', 'Vulnerability Scanner', 'Malware Detection', 'Password Strength Check'])">
+            Core Security Features
+        </div>
+    </div>
+</div>
+<div class="auth-section">
+  <h2 class="section__header">Advanced Security Tool</h2>
+  <div class="auth-card-wrapper">
+      <div class="auth-card main-card" 
+          onclick="toggleAuthCards(this, ['Dark Web Monitoring', 'DMARC Based Verification', 'Incident Simulator'])">
+          Advanced Security Tool
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="news-icon" id="openPopup">📰</div>
+
+    <!-- News Popup (on the Left Side) -->
+    <div id="newsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Cyber News</h2>
+            <button class="refresh-btn" id="refreshNews">
+              ⟳
+              </button>
+            <div id="newsContainer">Loading...</div>
+        </div>
+    </div>
+
+<div class="chat-icon" id="chatIcon">💬</div>
+    <div class="chat-container" id="chatContainer">
+        <iframe src="https://www.chatbase.co/chatbot-iframe/e8uUzaq59z-8QN1tgOkhc" allow="microphone"></iframe>
+    </div>
+
+
+
+    
+    <script src="script.js"></script>
+    <script>
+      const bgAnimation = document.getElementById('bgAnimation');
+  
+      if (bgAnimation) {
+          const numberOfColorBoxes = 400;
+  
+          for (let i = 0; i < numberOfColorBoxes; i++) {
+              const colorBox = document.createElement('div');
+              colorBox.classList.add('colorBox');
+              bgAnimation.append(colorBox);
+          }
+      } else {
+          console.error("bgAnimation element not found!");
+      }
+  </script>
+  
+</body>
+</html>
